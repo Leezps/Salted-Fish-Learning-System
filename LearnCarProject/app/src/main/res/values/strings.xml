@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">咸鱼学车</string>
+
+    <string name="splash_into_welcome_str">进入学车</string>
+    <item name="tag_first" type="id"/>
+    <item name="tag_second" type="id"/>
+</resources>

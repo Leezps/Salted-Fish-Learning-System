@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+    <TextView
+        android:id="@+id/fragment_driver_process_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="未登录"
+        android:textSize="20sp"
+        android:textColor="@color/color_title_blue"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/fragment_driver_process_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

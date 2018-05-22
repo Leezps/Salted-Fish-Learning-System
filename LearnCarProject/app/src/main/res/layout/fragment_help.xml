@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:text="常见问题"
+            android:textColor="@color/color_gray"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_weak_gray" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/fragment_help_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:scrollbars="none"></android.support.v7.widget.RecyclerView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_weak_gray" />
+
+        <TextView
+            android:id="@+id/fragment_help_opinion_btn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:drawableLeft="@drawable/help_opinion_feedback"
+            android:gravity="center"
+            android:paddingLeft="120dp"
+            android:paddingRight="120dp"
+            android:text="意见反馈"
+            android:textColor="@color/color_black"
+            android:textSize="20sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_weak_gray" />
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/fragment_help_show_part"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone"
+        android:clickable="true"
+        android:background="@color/color_help_background_translucent">
+        
+        <TextView
+            android:id="@+id/fragment_help_show_part_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="问题"
+            android:textSize="20sp"
+            android:textColor="@color/color_black"
+            android:background="@color/color_white"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_weak_gray"/>
+
+        <TextView
+            android:id="@+id/fragment_help_show_part_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="30dp"
+            android:paddingBottom="30dp"
+            android:text="问题的答案！"
+            android:textSize="15sp"
+            android:textColor="@color/color_light_gray"
+            android:background="@color/color_white"/>
+        
+    </LinearLayout>
+
+</FrameLayout>

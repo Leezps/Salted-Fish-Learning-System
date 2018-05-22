@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/fragment_driver_process_item_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:text="第一步："
+        android:textSize="15sp"
+        android:textColor="@color/color_driver_process_title_color"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_weak_gray"/>
+
+    <TextView
+        android:id="@+id/fragment_driver_process_item_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:text="学车第一步当然去报名，你报名了吗？"
+        android:textSize="12sp"
+        android:textColor="@color/color_black"/>
+
+</LinearLayout>

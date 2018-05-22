@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/fragment_payment_way_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+    </android.support.v7.widget.RecyclerView>
+    
+    <LinearLayout
+        android:id="@+id/fragment_payment_way_add_way"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:visibility="gone">
+        
+        <TextView
+            android:id="@+id/fragment_payment_way_add_alipay"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="支付宝"
+            android:textSize="15sp"
+            android:clickable="true"
+            android:textColor="@color/color_black"
+            android:background="@drawable/fragment_payment_way_add_way_selector"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_personal_payment_way_split_gray"/>
+
+        <TextView
+            android:id="@+id/fragment_payment_way_add_wechat"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="微信"
+            android:textSize="15sp"
+            android:clickable="true"
+            android:textColor="@color/color_black"
+            android:background="@drawable/fragment_payment_way_add_way_selector"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_personal_payment_way_split_gray"/>
+
+        <TextView
+            android:id="@+id/fragment_payment_way_add_build"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="建设银行"
+            android:textSize="15sp"
+            android:clickable="true"
+            android:textColor="@color/color_black"
+            android:background="@drawable/fragment_payment_way_add_way_selector"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_personal_payment_way_split_gray"/>
+
+        <TextView
+            android:id="@+id/fragment_payment_way_add_agriculture"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="农业银行"
+            android:textSize="15sp"
+            android:clickable="true"
+            android:textColor="@color/color_black"
+            android:background="@drawable/fragment_payment_way_add_way_selector"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_personal_payment_way_split_gray"/>
+
+        <TextView
+            android:id="@+id/fragment_payment_way_add_business"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="工商银行"
+            android:textSize="15sp"
+            android:clickable="true"
+            android:textColor="@color/color_black"
+            android:background="@drawable/fragment_payment_way_add_way_selector"/>
+
+    </LinearLayout>
+
+</FrameLayout>

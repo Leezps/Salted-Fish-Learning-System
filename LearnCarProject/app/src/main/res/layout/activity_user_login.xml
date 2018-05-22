@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:background="@color/color_white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="咸鱼学车"
+            android:textColor="@color/color_black"
+            android:textSize="35sp"
+            android:textStyle="italic" />
+
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/user_login_register_image" />
+
+        <EditText
+            android:id="@+id/activity_user_login_phone"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/activity_user_login_register_edittext_shape"
+            android:drawableLeft="@drawable/user_login_register_telephone"
+            android:drawablePadding="15dp"
+            android:gravity="center_vertical"
+            android:hint="请输入手机号"
+            android:textColorHint="@color/color_light_gray"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/activity_user_login_password"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/activity_user_login_register_edittext_shape"
+            android:drawableLeft="@drawable/user_login_register_password"
+            android:drawablePadding="22dp"
+            android:gravity="center_vertical"
+            android:hint="请输入密码"
+            android:textColorHint="@color/color_light_gray"
+            android:inputType="textPassword"
+            android:maxLength="20"
+            android:paddingLeft="13dp"
+            android:paddingRight="13dp"
+            android:textSize="18sp" />
+
+        <FrameLayout
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:padding="5dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/activity_user_login_goto_register"
+                android:layout_width="25dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:text="注册"
+                android:textSize="12sp"
+                android:textColor="@drawable/activity_user_login_textview_selector"/>
+
+            <TextView
+                android:id="@+id/activity_user_login_goto_forget"
+                android:layout_width="50dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center_vertical|end"
+                android:gravity="center"
+                android:text="忘记密码"
+                android:textSize="12sp"
+                android:textColor="@drawable/activity_user_login_textview_selector"/>
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/activity_user_login_btn"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/activity_user_login_register_btn_selector"
+            android:gravity="center"
+            android:clickable="true"
+            android:text="登陆"
+            android:textColor="@color/color_white"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+</ScrollView>

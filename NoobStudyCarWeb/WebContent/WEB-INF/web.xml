@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>NoobStudyCarWeb</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <resource-ref>
+  	<res-ref-name>jdbc/car_learning</res-ref-name>
+  	<res-type>javax.sql.DataSource</res-type>
+  	<res-auth>Container</res-auth>
+  </resource-ref>
+  
+  <servlet>
+  	<servlet-name>StudentLogin</servlet-name>
+  	<servlet-class>com.leezp.driver.servlet.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>StudentLogin</servlet-name>
+  	<url-pattern>/student_login.jsp</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>StudentRegister</servlet-name>
+  	<servlet-class>com.leezp.driver.servlet.RegisterServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>StudentRegister</servlet-name>
+  	<url-pattern>/student_register.jsp</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>StudentInforUpload</servlet-name>
+  	<servlet-class>com.leezp.driver.servlet.StudentInforUploadServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>StudentInforUpload</servlet-name>
+  	<url-pattern>/student_information_upload.jsp</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>StudentChangePassword</servlet-name>
+  	<servlet-class>com.leezp.driver.servlet.StudentChangePasswordServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>StudentChangePassword</servlet-name>
+  	<url-pattern>/student_change_password.jsp</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>StudentImageUpload</servlet-name>
+  	<servlet-class>com.leezp.driver.servlet.StudentImageUploadServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>StudentImageUpload</servlet-name>
+  	<url-pattern>/student_image_upload.jsp</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>StudentGetPayment</servlet-name>
+  	<servlet-class>com.leezp.driver.servlet.StudentGetPaymentServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>StudentGetPayment</servlet-name>
+  	<url-pattern>/student_get_payment.jsp</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>MessageCenter</servlet-name>
+  	<servlet-class>com.leezp.driver.servlet.MessageCenterServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>MessageCenter</servlet-name>
+  	<url-pattern>/message_center.jsp</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>CompleteOrder</servlet-name>
+  	<servlet-class>com.leezp.driver.servlet.CompleteOrderServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>CompleteOrder</servlet-name>
+  	<url-pattern>/complete_order.jsp</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>Help</servlet-name>
+  	<servlet-class>com.leezp.driver.servlet.HelpServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Help</servlet-name>
+  	<url-pattern>/help.jsp</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>StudentDriverProcess</servlet-name>
+  	<servlet-class>com.leezp.driver.servlet.StudentDriverProcessServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>StudentDriverProcess</servlet-name>
+  	<url-pattern>/student_driver_process.jsp</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>StudentExamCheats</servlet-name>
+  	<servlet-class>com.leezp.driver.servlet.StudentExamCheatsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>StudentExamCheats</servlet-name>
+  	<url-pattern>/student_exam_cheats.jsp</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>PublishOrder</servlet-name>
+  	<servlet-class>com.leezp.driver.servlet.PublishOrderServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>PublishOrder</servlet-name>
+  	<url-pattern>/publish_order.jsp</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>DriverLogin</servlet-name>
+  	<servlet-class>com.leezp.driver.servlet.DriverLoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>DriverLogin</servlet-name>
+  	<url-pattern>/driver_login.jsp</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>DriverRegister</servlet-name>
+  	<servlet-class>com.leezp.driver.servlet.DriverRegisterServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>DriverRegister</servlet-name>
+  	<url-pattern>/driver_register.jsp</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>DriverChangePassword</servlet-name>
+  	<servlet-class>com.leezp.driver.servlet.DriverChangePasswordServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>DriverChangePassword</servlet-name>
+  	<url-pattern>/driver_change_password.jsp</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>DriverImageUpload</servlet-name>
+  	<servlet-class>com.leezp.driver.servlet.DriverImageUploadServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>DriverImageUpload</servlet-name>
+  	<url-pattern>/driver_image_upload.jsp</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>DriverInforUpload</servlet-name>
+  	<servlet-class>com.leezp.driver.servlet.DriverInforUploadServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>DriverInforUpload</servlet-name>
+  	<url-pattern>/driver_infor_upload.jsp</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>DriverShow</servlet-name>
+  	<servlet-class>com.leezp.driver.servlet.DriverShowServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>DriverShow</servlet-name>
+  	<url-pattern>/driver_show.jsp</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>RelationCompleteOrder</servlet-name>
+  	<servlet-class>com.leezp.driver.servlet.RelationCompleteOrderServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>RelationCompleteOrder</servlet-name>
+  	<url-pattern>/relation_complete_order.jsp</url-pattern>
+  </servlet-mapping>
+</web-app>

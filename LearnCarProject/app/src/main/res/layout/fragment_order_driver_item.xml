@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+    
+    <ImageView
+        android:id="@+id/fragment_order_driver_item_head"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/order_driver_trainer_head"/>
+
+    <TextView
+        android:id="@+id/fragment_order_driver_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/fragment_order_driver_item_head"
+        android:layout_toRightOf="@id/fragment_order_driver_item_head"
+        android:layout_marginLeft="10dp"
+        android:text="教练"
+        android:textSize="15sp"
+        android:textColor="@color/color_black"/>
+
+    <TextView
+        android:id="@+id/fragment_order_driver_item_information"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fragment_order_driver_item_name"
+        android:layout_alignLeft="@id/fragment_order_driver_item_name"
+        android:layout_toLeftOf="@id/fragment_order_driver_item_place"
+        android:layout_marginRight="5dp"
+        android:lines="2"
+        android:ellipsize="end"
+        android:layout_marginTop="5dp"
+        android:text="我是老司机，带你装逼带你飞"
+        android:textColor="@color/color_order_driver_gray"
+        android:textSize="10sp"/>
+
+    <TextView
+        android:id="@+id/fragment_order_driver_item_price_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fragment_order_driver_item_information"
+        android:layout_alignLeft="@id/fragment_order_driver_item_information"
+        android:layout_marginTop="5dp"
+        android:text="费用："
+        android:textSize="10sp"
+        android:textColor="@color/color_order_driver_gray"/>
+
+    <TextView
+        android:id="@+id/fragment_order_driver_item_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/fragment_order_driver_item_price_label"
+        android:layout_alignTop="@id/fragment_order_driver_item_price_label"
+        android:text="222"
+        android:textSize="10sp"
+        android:textColor="@color/color_order_driver_red"/>
+
+    <TextView
+        android:id="@+id/fragment_order_driver_item_people_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/fragment_order_driver_item_price"
+        android:layout_alignTop="@id/fragment_order_driver_item_price"
+        android:layout_marginLeft="10dp"
+        android:text="练车人数："
+        android:textSize="10sp"
+        android:textColor="@color/color_order_driver_gray"/>
+
+    <TextView
+        android:id="@+id/fragment_order_driver_item_people"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/fragment_order_driver_item_people_label"
+        android:layout_alignTop="@id/fragment_order_driver_item_people_label"
+        android:text="520"
+        android:textSize="10sp"
+        android:textColor="@color/color_order_driver_red"/>
+
+    <TextView
+        android:id="@+id/fragment_order_driver_item_evaluate_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/fragment_order_driver_item_people"
+        android:layout_alignTop="@id/fragment_order_driver_item_people"
+        android:layout_marginLeft="10dp"
+        android:text="评价："
+        android:textSize="10sp"
+        android:textColor="@color/color_order_driver_gray"/>
+
+    <TextView
+        android:id="@+id/fragment_order_driver_item_evaluate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/fragment_order_driver_item_evaluate_label"
+        android:layout_alignTop="@id/fragment_order_driver_item_evaluate_label"
+        android:text="9.8"
+        android:textSize="10sp"
+        android:textColor="@color/color_order_driver_red"/>
+
+    <TextView
+        android:id="@+id/fragment_order_driver_item_phone_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/fragment_order_driver_item_price_label"
+        android:layout_below="@id/fragment_order_driver_item_price_label"
+        android:layout_marginTop="5dp"
+        android:text="联系电话："
+        android:textSize="10sp"
+        android:textColor="@color/color_order_driver_gray"/>
+
+    <TextView
+        android:id="@+id/fragment_order_driver_item_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/fragment_order_driver_item_phone_label"
+        android:layout_alignTop="@id/fragment_order_driver_item_phone_label"
+        android:text="13514125408"
+        android:textSize="10sp"
+        android:textColor="@color/color_order_driver_red"/>
+
+    <TextView
+        android:id="@+id/fragment_order_driver_item_place"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/fragment_order_driver_item_name"
+        android:layout_marginRight="15dp"
+        android:text="龙泉驿区"
+        android:textSize="12sp"
+        android:textColor="@color/color_order_driver_gray"/>
+
+    <TextView
+        android:id="@+id/fragment_order_driver_item_distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fragment_order_driver_item_place"
+        android:layout_alignLeft="@id/fragment_order_driver_item_place"
+        android:layout_marginTop="5dp"
+        android:text="距我1.5km"
+        android:textSize="10sp"
+        android:textColor="@color/color_order_driver_gray"/>
+
+</RelativeLayout>

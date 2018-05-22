@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_help_item_question"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:drawableRight="@drawable/help_answer_right"
+    android:gravity="center_vertical"
+    android:singleLine="true"
+    android:ellipsize="end"
+    android:text="咸鱼学车为什么不响应？"
+    android:textSize="15sp"
+    android:textColor="@color/color_black">
+</TextView>

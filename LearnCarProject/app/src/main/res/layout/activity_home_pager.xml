@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/activity_home_pager_head"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/color_title_blue"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/activity_home_pager_personal_information_menu"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="15dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/personal_information_list" />
+
+        <TextView
+            android:id="@+id/activity_home_pager_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="预约学车"
+            android:textColor="@color/color_white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <FrameLayout
+            android:id="@+id/activity_home_pager_message"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="end"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="7dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/personal_message" />
+
+            <ImageView
+                android:id="@+id/activity_home_pager_message_pointer"
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:layout_gravity="end|top"
+                android:visibility="invisible"
+                android:src="@drawable/personal_message_pointer" />
+
+        </FrameLayout>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/activity_home_pager_bottom_menu"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/activity_home_pager_order_driver_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/order_driver_click_btn"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="预约学车"
+            android:textColor="@color/color_bottom_menu_focus_blue"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/activity_home_pager_exam_cheats_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/exam_cheats_btn"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="考试秘籍"
+            android:textColor="@color/color_bottom_menu_gray"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/activity_home_pager_driver_process_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/driver_process_btn"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="学车流程"
+            android:textColor="@color/color_bottom_menu_gray"
+            android:textSize="10sp" />
+
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/activity_home_pager_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/activity_home_pager_bottom_menu"
+        android:layout_below="@id/activity_home_pager_head"></android.support.v4.view.ViewPager>
+
+    <FrameLayout
+        android:id="@+id/activity_home_pager_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:clickable="true">
+
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:background="@color/color_black"
+            android:clickable="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@color/color_personal_head_gray"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/activity_home_pager_personal_menu_head"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="20dp"
+                    android:clickable="false"
+                    android:src="@drawable/personal_menu_head"
+                    android:scaleType="fitXY"/>
+
+                <TextView
+                    android:id="@+id/activity_home_pager_personal_menu_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:text="请登录"
+                    android:textColor="@color/color_white"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/activity_home_pager_personal_menu_payment"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/personal_menu_btn_background_selector"
+                android:drawableLeft="@drawable/personal_payment_way_btn"
+                android:gravity="center"
+                android:paddingLeft="80dp"
+                android:paddingRight="80dp"
+                android:text="付款方式"
+                android:textColor="@color/color_white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/activity_home_pager_personal_menu_trail"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/personal_menu_btn_background_selector"
+                android:drawableLeft="@drawable/personal_driver_trail_btn"
+                android:gravity="center"
+                android:paddingLeft="80dp"
+                android:paddingRight="80dp"
+                android:text="学车订单"
+                android:textColor="@color/color_white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/activity_home_pager_personal_menu_message"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/personal_menu_btn_background_selector"
+                android:drawableLeft="@drawable/personal_message_center_btn"
+                android:gravity="center"
+                android:paddingLeft="80dp"
+                android:paddingRight="80dp"
+                android:text="消息中心"
+                android:textColor="@color/color_white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/activity_home_pager_personal_menu_help"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/personal_menu_btn_background_selector"
+                android:drawableLeft="@drawable/personal_help_btn"
+                android:gravity="center"
+                android:paddingLeft="80dp"
+                android:paddingRight="100dp"
+                android:text="帮助"
+                android:textColor="@color/color_white"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</RelativeLayout>

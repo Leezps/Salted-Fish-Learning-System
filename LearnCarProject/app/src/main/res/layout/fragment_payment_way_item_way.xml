@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@drawable/fragment_payment_way_item_way_selector">
+
+    <TextView
+        android:id="@+id/fragment_payment_way_item_way_content"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="支付宝"
+        android:textSize="20sp"
+        android:textColor="@color/color_black"/>
+
+    <ImageView
+        android:id="@+id/fragment_payment_way_item_way_image"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_toLeftOf="@id/fragment_payment_way_item_way_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/personal_payment_way_alipay"/>
+
+    <TextView
+        android:id="@+id/fragment_payment_way_item_way_remove"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        android:text="删除"
+        android:textSize="15sp"
+        android:textColor="@color/color_white"
+        android:background="@drawable/fragment_payment_way_item_way_way_remove"/>
+
+</RelativeLayout>

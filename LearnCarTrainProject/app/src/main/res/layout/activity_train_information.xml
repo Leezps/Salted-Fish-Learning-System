@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/colorPrimaryDark"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/activity_train_information_back"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:padding="10dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/activity_train_information_back" />
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="个人信息管理"
+                    android:textColor="@color/color_white"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/activity_train_information_head"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/activity_train_information_default_head" />
+
+                <EditText
+                    android:id="@+id/activity_train_information_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/activity_train_information_head"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:background="@null"
+                    android:hint="姓名"
+                    android:inputType="text"
+                    android:maxLength="5"
+                    android:textColor="@color/color_train_information_text_color"
+                    android:textColorHint="@color/color_light_gray"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/activity_train_information_evaluate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/activity_train_information_name"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/activity_train_information_name"
+                    android:text="评分：0.0"
+                    android:textColor="@color/color_black"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/activity_train_information_sex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/activity_train_information_evaluate"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@id/activity_train_information_head"
+                    android:text="性别："
+                    android:textColor="@color/color_black"
+                    android:textSize="12sp" />
+
+                <RadioGroup
+                    android:id="@+id/activity_train_information_sex_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/activity_train_information_sex"
+                    android:layout_toEndOf="@id/activity_train_information_sex"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/activity_train_information_sex_group_man"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/activity_train_information_sex_selector"
+                        android:checked="true"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:text="男"
+                        android:textSize="12sp" />
+
+                    <RadioButton
+                        android:id="@+id/activity_train_information_sex_group_woman"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/activity_train_information_sex_selector"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:text="女"
+                        android:textSize="12sp" />
+
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/activity_train_information_taught_people"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/activity_train_information_evaluate"
+                    android:layout_below="@id/activity_train_information_evaluate"
+                    android:layout_marginTop="10dp"
+                    android:text="已教人数：0"
+                    android:textColor="@color/color_black"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/activity_train_information_unit_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/activity_train_information_sex"
+                    android:layout_alignTop="@id/activity_train_information_taught_people"
+                    android:text="单位价："
+                    android:textColor="@color/color_black"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/activity_train_information_unit_price_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/activity_train_information_taught_people"
+                    android:layout_toRightOf="@id/activity_train_information_unit_price"
+                    android:background="@null"
+                    android:hint="0"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:textColor="@color/color_train_information_text_color"
+                    android:textColorHint="@color/color_light_gray"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/activity_train_information_unit_price"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/activity_train_information_unit_price_details"
+                    android:text="元/小时"
+                    android:textColor="@color/color_black"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_weak_gray" />
+
+            <TextView
+                android:id="@+id/activity_train_information_phone"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="手机号"
+                android:textColor="@color/color_black"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_weak_gray" />
+
+            <EditText
+                android:id="@+id/activity_train_information_identify"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@null"
+                android:gravity="center"
+                android:hint="身份证号(18位)"
+                android:maxLength="18"
+                android:textColor="@color/color_train_information_text_color"
+                android:textColorHint="@color/color_light_gray"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_weak_gray" />
+
+            <TextView
+                android:id="@+id/activity_train_information_place"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="所在城市(定位当前城市)"
+                android:textColor="@color/color_light_gray"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_weak_gray" />
+
+            <EditText
+                android:id="@+id/activity_train_information_information"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@null"
+                android:gravity="center"
+                android:hint="个人简介(300字以内)"
+                android:maxLength="300"
+                android:padding="10dp"
+                android:textColor="@color/color_train_information_text_color"
+                android:textColorHint="@color/color_light_gray"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_weak_gray" />
+
+            <ImageView
+                android:id="@+id/activity_train_information_identify_image"
+                android:layout_width="300dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="50dp"
+                android:layout_marginTop="50dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/activity_train_information_default_identify_image" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_weak_gray" />
+
+            <ImageView
+                android:id="@+id/activity_train_information_trainer_image"
+                android:layout_width="300dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="50dp"
+                android:layout_marginTop="50dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/activity_train_information_default_trainer_image" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_weak_gray" />
+
+            <TextView
+                android:id="@+id/activity_train_information_manager_btn"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="50dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/activity_train_information_btn_selector"
+                android:gravity="center"
+                android:text="上传/更新"
+                android:textColor="@color/color_white"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/activity_train_information_choose_image_ways"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/activity_train_information_camera"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/color_white"
+            android:gravity="center"
+            android:text="相机"
+            android:textColor="@color/color_black"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_weak_gray" />
+
+        <TextView
+            android:id="@+id/activity_train_information_photos"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/color_white"
+            android:gravity="center"
+            android:text="相册"
+            android:textColor="@color/color_black"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/activity_train_information_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_background_translucent"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="疯狂加载中……"
+            android:textColor="@color/color_white"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+</FrameLayout>

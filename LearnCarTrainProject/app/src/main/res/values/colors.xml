@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#40d8c1</color>
+    <color name="colorAccent">#40d8c1</color>
+    <color name="color_black">#000000</color>
+    <color name="color_weak_black">#222222</color>
+    <color name="color_white">#ffffff</color>
+    <color name="color_light_gray">#888888</color>
+    <color name="color_weak_gray">#eeeeee</color>
+    <color name="color_translucent">#33000000</color>
+    <color name="color_background_translucent">#88000000</color>
+
+    <color name="color_login_or_register_title_color">#40d8c1</color>
+    <color name="color_login_or_register_edit_bottom_color">#979797</color>
+    <color name="color_train_information_text_color">#40d8c1</color>
+</resources>

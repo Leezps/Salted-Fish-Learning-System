@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp">
+
+    <TextView
+        android:id="@+id/activity_book_success_order_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:ellipsize="end"
+        android:maxLength="6"
+        android:text="学员名"
+        android:textColor="@color/color_black"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/activity_book_success_order_item_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/activity_book_success_order_item_name"
+        android:layout_below="@id/activity_book_success_order_item_name"
+        android:layout_marginTop="10dp"
+        android:text="手机号：18485424472"
+        android:textColor="@color/color_black"
+        android:textSize="20sp" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/activity_book_success_order_item_head"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignBottom="@id/activity_book_success_order_item_phone"
+        android:layout_marginLeft="40dp"
+        android:src="@drawable/activity_book_success_order_item_default_head" />
+
+    <TextView
+        android:id="@+id/activity_book_success_order_item_time_slot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/activity_book_success_order_item_head"
+        android:layout_below="@id/activity_book_success_order_item_phone"
+        android:layout_marginTop="20dp"
+        android:text="2018/4/3   14:00-17:00"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/activity_book_success_order_item_place"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/activity_book_success_order_item_head"
+        android:layout_below="@id/activity_book_success_order_item_time_slot"
+        android:layout_marginTop="15dp"
+        android:text="四川师范大学成龙校区"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/activity_book_success_order_item_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/activity_book_success_order_item_head"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:text="￥22.22"
+        android:textColor="@color/color_black"
+        android:textSize="20sp" />
+
+</RelativeLayout>

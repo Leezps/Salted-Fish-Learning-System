@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="@drawable/activity_message_center_item_shape">
+
+    <TextView
+        android:id="@+id/activity_message_center_item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginTop="20dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="消息标题"
+        android:textColor="@color/color_black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/activity_message_center_item_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/activity_message_center_item_title"
+        android:layout_below="@id/activity_message_center_item_title"
+        android:layout_marginRight="100dp"
+        android:layout_marginTop="10dp"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:text="消息内容"
+        android:textColor="@color/color_black"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/activity_message_center_item_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="30dp"
+        android:src="@drawable/activity_message_center_item_image" />
+
+    <TextView
+        android:id="@+id/activity_message_center_item_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/activity_message_center_item_image"
+        android:layout_marginTop="10dp"
+        android:text="2018/4/4"
+        android:textColor="@color/color_light_gray"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/activity_message_center_item_no_open"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/activity_message_center_item_pointer" />
+
+</RelativeLayout>

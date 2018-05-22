@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<litepal>
+    <dbname value="CarLearning"/>
+    <version value="1"/>
+    <list>
+        <mapping class="com.android.leezp.learncarproject.entity.DriverProcessEntity"/>
+        <mapping class="com.android.leezp.learncarproject.entity.ExamCheatsEntity"/>
+        <mapping class="com.android.leezp.learncarproject.entity.HelpEntity"/>
+        <mapping class="com.android.leezp.learncarproject.entity.MessageCenterEntity"/>
+        <mapping class="com.android.leezp.learncarproject.entity.PaymentWayEntity"/>
+        <mapping class="com.android.leezp.learncarproject.entity.CompleteOrderEntity"/>
+        <mapping class="com.android.leezp.learncarproject.entity.DriverEntity"/>
+    </list>
+</litepal>

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/activity_publish_order_prelude"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:background="@color/color_title_blue">
+
+        <ImageView
+            android:id="@+id/activity_publish_order_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/personal_menu_back_image" />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="发布订单"
+            android:textColor="@color/color_white"
+            android:textSize="20sp"/>
+
+    </RelativeLayout>
+
+    <ExpandableListView
+        android:id="@+id/activity_publish_order_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/activity_publish_order_prelude"
+        android:childDivider="@color/color_weak_gray"
+        android:divider="@color/color_weak_gray"
+        android:dividerHeight="1dp"
+        android:groupIndicator="@null"
+        android:scrollbars="none">
+    </ExpandableListView>
+
+    <LinearLayout
+        android:id="@+id/activity_publish_order_book_order"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:gravity="center"
+        android:background="@color/color_help_background_translucent"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:background="@color/color_white"
+            android:text="订单预定"
+            android:textSize="18sp"
+            android:textColor="@color/color_black"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_weak_gray"/>
+
+        <TextView
+            android:id="@+id/activity_publish_order_book_order_time_slot"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="@color/color_white"
+            android:gravity="center"
+            android:paddingLeft="150dp"
+            android:text="订单时间段：8:00-9:00"
+            android:textSize="12sp"
+            android:textColor="@color/color_light_gray"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_weak_gray"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@color/color_white"
+            android:gravity="center_vertical"
+            android:paddingLeft="50dp"
+            android:text="已存在订单(不要取以下订单时间段以内的订单)"
+            android:textSize="13sp"
+            android:textColor="@color/color_black"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_weak_gray"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/activity_publish_order_book_order_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scrollbars="none"
+            android:background="@color/color_white">
+        </android.support.v7.widget.RecyclerView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_weak_gray"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:background="@color/color_white">
+
+            <TextView
+                android:id="@+id/activity_publish_order_book_order_begin_time"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="开始时间"
+                android:textColor="@color/color_light_gray"
+                android:textSize="18sp"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/color_weak_gray"/>
+
+            <TextView
+                android:id="@+id/activity_publish_order_book_order_end_time"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="结束时间"
+                android:textColor="@color/color_light_gray"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_weak_gray"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:background="@color/color_white">
+
+            <TextView
+                android:id="@+id/activity_publish_order_book_order_confirm"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="确认"
+                android:textSize="20dp"
+                android:textColor="@color/color_black"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/color_weak_gray"/>
+
+            <TextView
+                android:id="@+id/activity_publish_order_book_order_cancel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="取消"
+                android:textSize="20dp"
+                android:textColor="@color/color_gray"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/activity_publish_order_time_part"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:visibility="gone"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:background="@color/color_help_background_translucent">
+
+        <TimePicker
+            android:id="@+id/activity_publish_order_time_part_selector"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

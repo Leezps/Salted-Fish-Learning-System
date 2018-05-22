@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="40dp"
+                android:gravity="center"
+                android:text="咸鱼教练端"
+                android:textColor="@color/color_login_or_register_title_color"
+                android:textSize="20sp"
+                android:textStyle="italic|bold" />
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="30dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/app_image_round" />
+
+            <EditText
+                android:id="@+id/activity_login_or_register_phone"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/activity_login_or_register_edit_shape"
+                android:drawableLeft="@drawable/activity_login_or_register_phone"
+                android:drawablePadding="15dp"
+                android:gravity="center_vertical"
+                android:hint="请输入手机号"
+                android:inputType="phone"
+                android:maxLength="11"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColorHint="@color/color_light_gray"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/activity_login_or_register_password"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/activity_login_or_register_edit_shape"
+                android:drawableLeft="@drawable/activity_login_or_register_password"
+                android:drawablePadding="22dp"
+                android:gravity="center_vertical"
+                android:hint="请输入密码"
+                android:inputType="textPassword"
+                android:maxLength="20"
+                android:paddingLeft="13dp"
+                android:paddingRight="13dp"
+                android:textColorHint="@color/color_light_gray"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/activity_login_or_register_land_btn"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="50dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/activity_login_or_register_btn_selector"
+                android:gravity="center"
+                android:text="登陆"
+                android:textColor="@color/color_white"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/activity_login_or_register_enroll_btn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="20dp"
+        android:elevation="8dp"
+        android:src="@drawable/activity_login_or_register_add_trainer" />
+
+    <LinearLayout
+        android:id="@+id/activity_login_or_register_enroll_part"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_translucent"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_white"
+            android:clickable="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="用户信息注册"
+                android:textColor="@color/color_login_or_register_title_color"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/activity_login_or_register_enroll_part_phone"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/activity_login_or_register_edit_shape"
+                android:drawableLeft="@drawable/activity_login_or_register_phone"
+                android:drawablePadding="17dp"
+                android:gravity="center_vertical"
+                android:hint="请输入手机号"
+                android:inputType="phone"
+                android:maxLength="11"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColorHint="@color/color_light_gray"
+                android:textSize="18sp" />
+
+            <FrameLayout
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp">
+
+                <EditText
+                    android:id="@+id/activity_login_or_register_enroll_part_verification"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/activity_login_or_register_edit_shape"
+                    android:drawableLeft="@drawable/activity_login_or_register_verification"
+                    android:drawablePadding="20dp"
+                    android:gravity="center_vertical"
+                    android:hint="请输入验证码"
+                    android:inputType="number"
+                    android:maxLength="6"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textColorHint="@color/color_light_gray"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/activity_login_or_register_enroll_part_get_verification"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical|end"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/activity_login_or_register_btn_selector"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="获取验证码"
+                    android:textColor="@color/color_white" />
+
+            </FrameLayout>
+
+            <EditText
+                android:id="@+id/activity_login_or_register_enroll_part_password"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/activity_login_or_register_edit_shape"
+                android:drawableLeft="@drawable/activity_login_or_register_password"
+                android:drawablePadding="22dp"
+                android:gravity="center_vertical"
+                android:hint="请输入密码"
+                android:inputType="textPassword"
+                android:maxLength="20"
+                android:paddingLeft="13dp"
+                android:paddingRight="13dp"
+                android:textColorHint="@color/color_light_gray"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/activity_login_or_register_enroll_part_confirm"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/activity_login_or_register_edit_shape"
+                android:drawableLeft="@drawable/activity_login_or_register_confirm"
+                android:drawablePadding="12dp"
+                android:gravity="center_vertical"
+                android:hint="请确认密码"
+                android:inputType="textPassword"
+                android:maxLength="20"
+                android:paddingLeft="13dp"
+                android:paddingRight="13dp"
+                android:textColorHint="@color/color_light_gray"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/activity_login_or_register_enroll_part_btn"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="35dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/activity_login_or_register_btn_selector"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="注册"
+                android:textColor="@color/color_white"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
